@@ -62,3 +62,8 @@ Pipes transform bound properties
 Realative Paths and Module Id
 - setting moduleId makes it so you can use relative urls
 - only availabe using commonjs module formats
+
+
+@Input decorator for a class property specifies that property comes from the directive like props in react
+
+@Output emits an event to the parent
