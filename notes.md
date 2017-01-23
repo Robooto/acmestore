@@ -74,3 +74,20 @@ A class with a focused purpose.
 Encapsulating logic, webapi calls, etc
 
 Register a provider = registering a service O__O great
+
+Observables and Reactive Extensions
+- help manage async data
+- array whose items arrive async over time
+- reactive extensions (rxjs)
+- operators process each value as it is emitted
+
+Promise vs Observables
+Promise provides a single future value
+promise not lazy
+promise not cancellable
+
+Observables
+Emits multiple values over time
+lazy
+cancellable
+supports array methods
