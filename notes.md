@@ -41,3 +41,24 @@ Two-way Binding
 Pipes = transform properties before they are displayed
 pipes can take params {{product.price | currency:'USD':true:'1.2-2' }}
 they are seperatored by ':'
+
+
+Interfaces - specification for identifying related set of properties and methods
+
+
+Encapsulating component styles
+- styles: ['thead { color: #337AB7;}']  inline styles for the component
+- sytlesUrls: ['app/products/product-list.component.css'] - external style sheets
+
+
+Lifecycle Hooks
+- OnInit: Perform component initialization, retrieve data
+- OnChanges: Perform action after change to input properties
+- OnDestory: clean up before angular destroys the component
+
+Pipes transform bound properties
+- Can build custome pipes
+
+Realative Paths and Module Id
+- setting moduleId makes it so you can use relative urls
+- only availabe using commonjs module formats
