@@ -67,3 +67,10 @@ Realative Paths and Module Id
 @Input decorator for a class property specifies that property comes from the directive like props in react
 
 @Output emits an event to the parent
+
+
+Service
+A class with a focused purpose.
+Encapsulating logic, webapi calls, etc
+
+Register a provider = registering a service O__O great
