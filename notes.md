@@ -31,3 +31,13 @@ Property binding - binding html properies to data **prefer this
 
 Interpolation binding -
 <img src={{product.imageUrl}} />
+
+Event Binding - <button (click)='toggleImage()'> - function on the class
+
+
+Two-way Binding
+<input [(ngModel)] ='listFilter'>
+
+Pipes = transform properties before they are displayed
+pipes can take params {{product.price | currency:'USD':true:'1.2-2' }}
+they are seperatored by ':'
