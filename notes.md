@@ -91,3 +91,12 @@ Emits multiple values over time
 lazy
 cancellable
 supports array methods
+
+Providers array
+don't register services in the app module because they will be avaialbe to the entire application
+register them to the component
+Guards do go in the app module provider
+
+Feature modules
+
+BrowserModule should only be imported by the root app modules
