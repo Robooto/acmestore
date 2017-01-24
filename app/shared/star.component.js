@@ -9,34 +9,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var StartComponent = (function () {
-    function StartComponent() {
+var StarComponent = (function () {
+    function StarComponent() {
         this.ratingClicked = new core_1.EventEmitter();
     }
     // recalculates when the it rerenders
     // watches for changes on input properties
-    StartComponent.prototype.ngOnChanges = function () {
+    StarComponent.prototype.ngOnChanges = function () {
         this.starWidth = this.rating * 86 / 5;
     };
-    StartComponent.prototype.onClick = function () {
+    StarComponent.prototype.onClick = function () {
         this.ratingClicked.emit("The rating " + this.rating + " was clicked!");
     };
-    return StartComponent;
+    return StarComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", Number)
-], StartComponent.prototype, "rating", void 0);
+], StarComponent.prototype, "rating", void 0);
 __decorate([
     core_1.Output(),
     __metadata("design:type", core_1.EventEmitter)
-], StartComponent.prototype, "ratingClicked", void 0);
-StartComponent = __decorate([
+], StarComponent.prototype, "ratingClicked", void 0);
+StarComponent = __decorate([
     core_1.Component({
         selector: 'ai-star',
         templateUrl: 'app/shared/star.component.html',
         styleUrls: ['app/shared/star.component.css']
     })
-], StartComponent);
-exports.StartComponent = StartComponent;
+], StarComponent);
+exports.StarComponent = StarComponent;
 //# sourceMappingURL=star.component.js.map
